@@ -36,21 +36,8 @@ const initState = [
 ]
 
 export const ContactList = () =>{
-
     const [contactList,setContactList] = useState(initState)
 
-    const handleClick = (Name,Email,phone,img_src) =>{
-        setContactList([
-            ...contactList,
-            {
-                id: contactList[contactList.length-1].id + 1  ,
-                Name : Name,
-                Email : Email,
-                phone : phone,
-                img_src : img_src
-            }
-        ])
-    }
     return (
        <div>
          <h3>Contact Form</h3>
@@ -61,7 +48,7 @@ export const ContactList = () =>{
                 img_src = {item.img_src}
                 Name={item.Name}
                 Email={item.Email}
-                Phone={item.phone}
+                phone={item.phone}
                 />
              </div>
          ))}

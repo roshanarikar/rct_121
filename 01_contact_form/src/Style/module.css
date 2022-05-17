@@ -1,9 +1,19 @@
 #card{
-    background-color: 1px solid black;
+   border: 1px solid black;
+   display: flex;
+   margin: auto;
+   width: 50%;
 }
 
 img{
+    margin-right: 50px;
+    margin-left: 50px;
     width: 50px;
     height: 40px;
     border-radius: 5px;
+}
+
+#clickCard{
+    margin-left: 40px;
+    cursor: pointer;
 }
