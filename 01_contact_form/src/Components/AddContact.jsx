@@ -1,30 +1,14 @@
 import React, { useState } from "react"
 
-export const AddContact = (props) =>{
-    const [ Name ,setName] = useState("");
-    const [ Email,setEmail ] = useState("");
-    const [ phone,setphone ] = useState("");
-    const [ img_src,setimage ] = useState("");
-
-    const handleClick = () =>{
-        if(props.handleClick)  props.handleClick(Name,Email,phone,img_src);
-
-        setName("");
-        setEmail("");
-        setphone("");
-        setimage("");
-    }
+export const AddContact = () =>{
+    
     return (
         <div>
             <div>
-               <input placeholder="Enter Name"
-               value={Name} 
-               onChange={(e) => setName(e.target.value)}/>
+               <input placeholder="Enter Name"/>
             </div>
             <div>
-                <input placeholder="Enter Email" 
-                value={Email} 
-                onChange={(e) => setEmail(e.target.value)}/>
+                <input placeholder="Enter Email"/>
             </div>
             <div>
                 <input placeholder="Enter Phone" 

@@ -1,6 +1,4 @@
 import { useState } from "react"
-import { normalizePath } from "vite"
-import { AddContact } from "./AddContact"
 import { ContactCard } from "./ContactCard"
 
 
@@ -56,8 +54,6 @@ export const ContactList = () =>{
     return (
        <div>
          <h3>Contact Form</h3>
-         <AddContact handleClick={handleClick}/>
-         <br />
          {contactList.map((item) =>(
              <div key={item.id}>
                 <ContactCard
